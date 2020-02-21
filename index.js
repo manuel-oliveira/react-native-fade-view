@@ -46,7 +46,7 @@ export default class FadeView extends PureComponent {
     this.mounted = false;
   }
 
-  componentWillReceiveProps({ active, animationDuration }) {
+  UNSAFE_componentWillReceiveProps({ active, animationDuration }) {
     let { progress } = this.state;
 
     if (active ^ this.props.active) {
